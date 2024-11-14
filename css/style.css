@@ -1,0 +1,554 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+
+body {
+    background-image: url("../img/bg_m.jpg");
+    background-size: cover;
+    background-repeat: repeat-x;
+}
+
+header {
+  position: fixed;
+  background-color:  #222031;
+  height: 5rem;
+  font-size: 1.25rem;
+  z-index: 1000;
+
+}
+h1{
+    margin-top: 2.5rem;
+    line-height: 0;
+}
+#logo a{
+    text-decoration: none;
+    color: #e5deec;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.navbar{
+    height: 5rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+}
+
+
+.nav-link{
+    color: rgb(255, 255, 255);
+    position: relative;
+    text-decoration: none;
+    border-bottom: dashed transparent;
+    transition: all 0.3s ease;
+  }
+
+ 
+.nav-link:hover{
+    color: #A3588C;
+}
+.navbar-nav{
+    --bs-nav-link-hover-color:  rgb(255, 255, 255)
+}
+.navbar-nav .nav-link.active{
+    color: #A3588C;
+    font-weight: bold;
+}
+
+.nav-link::before{
+    content: '';
+    position: absolute;
+    bottom: 4px;  
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0; 
+    border-bottom: 3px dashed #40A6C8;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::before, .nav-link.active::before{
+    width: 100%; 
+    visibility: visible;
+    
+}
+
+.navbar-toggler-icon {
+  --bs-navbar-toggler-icon-bg: url(../img/menu.png)
+}
+
+.btn-descarga {
+    background-color: #A3588C; 
+    color: white;
+    padding: 8px 20px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 50px; 
+    transition: 0.3s background-color;
+    box-shadow: 2px 9px 6px -3px rgb(20 19 41 / 39%), 1px -1px 2px 1px rgb(42 50 102 / 50%);
+  }
+  
+  .btn-descarga:hover {
+    background-color: #b2719e;
+  }
+
+  .navbar-toggler{
+    border: none;
+    font-size: 1.7rem;
+  }
+
+  .navbar-toggler:focus, .btn-close:focus{
+    box-shadow: none;
+  }
+
+  .offcanvas{
+    background-color: #222031;
+  }
+
+  .btn-close:hover{
+    opacity: 100%;
+  }
+
+  #btn_des li:last-child {
+    width: 3.5rem;
+    text-indent: -400px;
+    overflow: hidden;
+    background-color: aliceblue;
+    background: url(../img/btn_des.png) center center no-repeat;
+    background-color: #A3588C;
+    padding-block: 1rem 2rem 3re;
+    padding: .5rem;
+    padding-left: 1rem;
+    border-radius: 8px;
+    box-shadow: 2px 9px 6px -3px rgb(20 19 41 / 39%), 1px -1px 2px 1px rgb(42 50 102 / 50%);
+  }
+  
+  
+  #btn_des li:first-child{
+    display: none;
+  }
+  
+  nav:target #btn_des li{
+    width: 1.7rem;
+    background: url(../img/btn_des.png) center center no-repeat;
+    background-size: contain;
+    
+  }
+  
+  nav:target #btn_des li:first-child{
+    display: none;
+  }
+  
+  nav:target #btn_des li:last-child{
+    display: block;
+  }
+  
+  nav ul {
+    margin: 0 0;
+  }
+
+  .offcanvas-title{
+    color: #e5deec;
+    font-size: 2rem;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: bold;
+  }
+
+  .cover-image {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.cover-image img {
+    width: 100vw; 
+    height: 100%; 
+    object-fit: cover;
+}
+
+.row{
+  margin: 0;
+}
+
+img{
+  max-width: 100%;
+}
+
+main{
+  color: rgb(252, 244, 255);
+  
+}
+
+main p, main li{
+  font-size: 0.9rem;
+}
+
+main h2{
+  color: #40A6C8;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: bold;
+}
+
+#nosotros{
+  margin: 2rem 0;
+  text-align: justify;
+  align-items: center;
+}
+
+#nosotros p{
+  font-family: "Montserrat", sans-serif;
+  font-weight:normal;
+}
+
+#nosotros picture img{
+  box-shadow: 3px 4px 5px 1px rgb(20 19 41 / 39%);
+  margin-bottom: 2rem;
+}
+
+.quien{
+  margin-bottom: 1rem;
+}
+
+.porque{
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap-reverse;
+}
+
+.porque h3, #explora h3{
+  color: #A3588C;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-size: 1.3rem;
+
+}
+.porque ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.porque ul li {
+  background-image: url('../img/marcador.png');
+  background-size: 2.5rem;
+  background-repeat: no-repeat;
+  padding-left: 4rem;
+  margin-bottom: 1.5rem;
+}
+
+.porque picture img{
+  box-shadow: -5px 5px 5px 1px rgb(20 19 41 / 39%);
+  margin-bottom: 2rem;
+}
+
+.carousel, .accordion{
+  margin: 2rem 2rem;
+  box-shadow: 0px 3px 8px 2px rgb(20 19 41 / 39%);
+
+}
+
+.carousel-control-prev-icon {
+  background-image: url(../img/flecha_1.png);
+  height: 1.5rem;
+  width: 1rem;
+  }
+
+.carousel-control-prev {
+  opacity: 100%;
+}
+
+.carousel-control-next-icon {
+  background-image: url(../img/flecha_2.png);
+  height: 1.5rem;
+  width: 1rem;
+}
+.carousel-control-next {
+  opacity: 100%;
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: #40A6C8;
+}
+
+#ayuda{
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+.accordion-button {
+  background: linear-gradient(90deg, #40a6c8, #5f5589, #9f5888);
+  color: #222031;
+  height: 4rem;
+}
+
+.accordion {
+  --bs-accordion-btn-active-icon: url(../img/flecha.png);
+  --bs-accordion-active-bg: #2c3d63;
+  --bs-accordion-active-color: #222031; 
+  --bs-accordion-btn-icon: url(../img/flecha.png);
+  --bs-accordion-border-color:  #222031;
+  --bs-accordion-color: #ffffff;
+  --bs-accordion-bg: #d1a4ff21;
+  --bs-accordion-btn-focus-box-shadow: none;
+
+}
+
+
+#explora{
+  margin: 6rem 0;
+
+}
+
+#explora h2{
+  margin-bottom: 4rem;
+
+}
+
+.sec {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+#descarga{
+  background-color: #e5deec20;
+}
+
+#descarga h2{
+  color: #40A6C8;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: bold;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+#descarga .fs-5 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+}
+
+#descarga .d-grid .btn {
+  padding: 1rem 2rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+#descarga a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+#descarga picture {
+  display: block;
+  margin: 0 auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#descarga img {
+  max-width: 150px;
+  height: auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#descarga a:hover picture img {
+  transform: scale(1.1);   
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
+}
+
+#descarga a:first-child:hover picture img {
+  filter: brightness(1.1);  
+}
+#descarga a:last-child:hover picture img {
+  filter: brightness(1.1);  
+}
+footer {
+  width: 100%;                  
+  padding: 20px 0;              
+  text-align: center;
+  color: white;          
+  background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+footer section {
+  display: flex;                
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;       
+  text-align: center;    
+  padding-top: 20px;      
+}
+
+footer div {
+  margin-bottom: 20px;      
+}
+
+footer a {
+  margin: 10px;
+}
+
+footer picture {
+  display: block;           
+  margin: 10px auto; 
+}
+
+footer img {
+  max-width: 50px;       
+  height: auto;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+footer a:hover picture img {
+  transform: scale(1.1);  
+}
+
+footer section {
+  min-height: 300px;            
+}
+
+footer a {
+  text-decoration: none; 
+  color: inherit; 
+}
+
+
+footer p {
+  margin: 10px 0;
+  color: inherit; 
+}
+
+
+footer p a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.footers{
+  display: flex;
+}
+
+
+
+/* ----------------TABLET--------------------- */
+
+@media screen and (min-width: 768px) {
+
+  body {
+    background-image: url("../img/bg_t.jpg");
+  } /* Corchete de cierre añadido aquí */
+
+  #btn_des li:first-child {
+    display: block;
+  }
+
+  #btn_des li:last-child {
+    display: none;
+  }
+
+  main p {
+    font-size: 1rem;
+  }
+
+  main li {
+    font-size: 1.1rem;
+  }
+
+  #nosotros .row{
+    flex-direction: row-reverse;
+  }
+
+  .quien, #explora h2 {
+    margin-bottom: 0;
+  }
+  
+  .porque {
+    margin-top: 2rem;
+  }
+
+  .porque img {
+    width: 80%;
+  }
+
+  .porque .col-md-6 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .carousel{
+    margin: 3rem 8rem;
+  }
+
+  #ayuda{
+    margin-top: 3rem;
+  }
+
+  .accordion{
+    margin: 2rem 8rem;
+
+  }
+
+  .carousel-control-prev-icon {
+    height: 2rem;
+    width: 1.5rem;
+  }
+  
+  .carousel-control-next-icon {
+    height: 2rem;
+    width: 1.5rem;
+  }
+
+  .sec{
+    flex-direction: row;
+  }
+
+
+}
+
+  
+
+/* --------------------PC--------------------- */
+@media screen and (min-width: 991px) {
+
+  body {
+    background-image: url("../img/bg.jpg");
+  }
+
+  main li {
+    font-size: 1.2rem;
+  }
+
+  .porque {
+    margin-top: 4rem;
+  }
+
+  .porque picture img {
+    margin-bottom: 0;
+  }
+
+  .porque img {
+    width: 100%;
+  }
+
+  .carousel{
+    margin: 6.5rem 8rem;
+  }
+  
+  .carousel-control-prev-icon {
+    height: 3rem;
+    width: 2rem;
+  }
+  
+  .carousel-control-next-icon {
+    height: 3rem;
+    width: 2rem;
+  }
+
+  footer{
+    font-size: 20px;
+    align-items: center;
+  }
+  .footers{
+    display: block;
+    padding-left: 30px;
+  }
+  footer section{
+    flex-direction: row;
+  }
+}

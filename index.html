@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roman-Vasquez_DMM2BP-TM_2024</title>
+
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+  <header class="container-fluid">
+    <h1 id="logo" class="container-md"><a href="#">NAVINA</a></h1>
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container-md justify-content-end">
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="menu-lateral" aria-labelledby="etiqueta-menu-lateral">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="etiqueta-menu-lateral">NAVINA</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+              aria-label="Cerrar"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" aria-current="page" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="#nosotros">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="#ayuda">Ayuda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="#explora">Explora</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <ul id="btn_des">
+          <li><a class="btn-descarga me-2 " href="#descarga">Descarga</a></li>
+          <li><a class="btn-descarga me-2 " href="#descarga">descarga</a></li>
+        </ul>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#menu-lateral"
+          aria-controls="menu-lateral" aria-label="menu-hamburguesa">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <figure class="cover-image">
+      <picture>
+        <source media="(max-width: 576px)" srcset="img/portada_m.png">
+        <source media="(max-width: 991px)" srcset="img/portada_t.png">
+        <img src="img/portada.png" alt="Banner Navina">
+      </picture>
+    </figure>
+
+    <article id="nosotros" class="container-fluid">
+      <div class="row justify-content-evenly align-items-center">
+        <div class=" quien col-11 col-md-5">
+          <h2 class="mb-4 text-center">Quiénes somos</h2>
+          <p>En Navina, no solo brindamos un servicio de transporte, sino una red de apoyo que incluye nuestra asistente
+            virtual INA, quien estará a tu lado en cada viaje para ayudarte.</p>
+          <p>Nuestro equipo está comprometido en crear un espacio de movilidad donde la seguridad y el confort sean
+            prioridades, acompañándote con herramientas y opciones que se adaptan a tus necesidades.</p>
+        </div>
+        <picture class="col-11 col-md-6 col-lg-5">
+          <source media="(max-width: 576px)" srcset="img/img1_m.jpg">
+          <source media="(max-width: 991px)" srcset="img/img1_t.jpg">
+          <img src="img/img1.jpg" alt="Conductora de Navina">
+        </picture>
+      </div>
+    </article>
+
+    <article class="container-fluid porque">
+      <div class="row justify-content-evenly align-items-center">
+        <div class="col-11 col-lg-6">
+          <h2 class="mb-4 text-center">¿Por qué elegir NAVINA?</h2>
+          <ul>
+            <li>
+              <h3>Seguridad y Compañía en Cada Viaje</h3>
+              Con NAVINA, nunca viajas sola. La app ofrece funciones de seguridad avanzadas, incluyendo monitoreo de
+              rutas y la compañía virtual de INA, tu asistente de confianza que te acompaña en todo momento.
+            </li>
+            <li>
+              <h3>Viajes Adaptados a Tus Preferencias</h3>
+              Escoge entre rutas más rápidas, menos concurridas o incluso elige compartir el viaje con otras mujeres.
+              NAVINA te permite personalizar cada trayecto, adaptándose a tus necesidades.
+            </li>
+            <li>
+              <h3>Comunidad de Apoyo y Confianza</h3>
+              Al unirte a NAVINA, formas parte de una comunidad que se preocupa por tu bienestar. Con comentarios y
+              experiencias compartidas por otras usuarias, sentirás el respaldo de un servicio pensado especialmente
+              para ti.
+            </li>
+          </ul>
+        </div>
+        <picture class="col-8 col-md-6 col-lg-4">
+          <source media="(max-width: 576px)" srcset="img/img2_m.jpg">
+          <source media="(max-width: 991px)" srcset="img/img2_t.jpg">
+          <img src="img/img2.jpg" alt="Amigas viajando con Navina">
+        </picture>
+      </div>
+    </article>
+
+
+
+    <article id="ayuda">
+      <h2 class="mb-4 text-center">Preguntas Frecuentes</h2>
+      <div class="accordion" id="acordeon">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#bajaruno"
+              aria-expanded="true" aria-controls="bajaruno">
+              ¿Cómo puedo descargar la app NAVINA?
+            </button>
+          </h2>
+          <div id="bajaruno" class="accordion-collapse collapse show" data-bs-parent="#acordeon">
+            <div class="accordion-body">
+              Puedes descargar la app NAVINA de forma gratuita desde la App Store para dispositivos iOS o Google Play
+              para Android. Solo busca "NAVINA" y sigue las instrucciones para instalarla en tu teléfono.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#bajardos" aria-expanded="false" aria-controls="bajardos">
+              ¿Es seguro usar NAVINA para compartir un viaje?
+            </button>
+          </h2>
+          <div id="bajardos" class="accordion-collapse collapse" data-bs-parent="#acordeon">
+            <div class="accordion-body">
+              Sí, en NAVINA la seguridad es nuestra prioridad. Solo puedes compartir viajes con otras mujeres, y todas
+              las rutas son monitoreadas en tiempo real. Además, puedes contar con el apoyo de INA, tu asistente
+              virtual, durante todo el trayecto.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#bajartres" aria-expanded="false" aria-controls="bajartres">
+              ¿Qué hacer si tengo un problema durante el viaje?
+            </button>
+          </h2>
+          <div id="bajartres" class="accordion-collapse collapse" data-bs-parent="#acordeon">
+            <div class="accordion-body">
+              Si tienes algún inconveniente, puedes comunicarte con nuestro equipo de soporte a través de la app.
+              También puedes usar la función de emergencia para alertar a tus contactos de confianza o a las autoridades
+              si es necesario.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#bajarcuatro" aria-expanded="false" aria-controls="bajarcuatro">
+              ¿Puedo elegir el tipo de ruta que quiero tomar?
+            </button>
+          </h2>
+          <div id="bajarcuatro" class="accordion-collapse collapse" data-bs-parent="#acordeon">
+            <div class="accordion-body">
+              Sí, en NAVINA la seguridad es nuestra prioridad. Solo puedes compartir viajes con otras mujeres, y todas
+              las rutas son monitoreadas en tiempo real. Además, puedes contar con el apoyo de INA, tu asistente
+              virtual, durante todo el trayecto.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#bajarcinco" aria-expanded="false" aria-controls="bajarcinco">
+              ¿NAVINA ofrece algún servicio adicional aparte de los viajes?
+            </button>
+          </h2>
+          <div id="bajarcinco" class="accordion-collapse collapse" data-bs-parent="#acordeon">
+            <div class="accordion-body">
+              Sí, en NAVINA la seguridad es nuestra prioridad. Solo puedes compartir viajes con otras mujeres, y todas
+              las rutas son monitoreadas en tiempo real. Además, puedes contar con el apoyo de INA, tu asistente
+              virtual, durante todo el trayecto.
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article>
+      <div id="carrusel" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carrusel" data-bs-slide-to="0" class="active" aria-current="true"
+            aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carrusel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carrusel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <picture>
+              <source media="(max-width: 576px)" srcset="img/img3_m.jpg">
+              <source media="(max-width: 991px)" srcset="img/img3_m.jpg">
+              <img src="img/img3_m.jpg" class="d-block w-100" alt="Conductora de Navina">
+            </picture>
+          </div>
+          <div class="carousel-item">
+            <picture>
+              <source media="(max-width: 576px)" srcset="img/img4_m.jpg">
+              <source media="(max-width: 991px)" srcset="img/img4_m.jpg">
+              <img src="img/img4_m.jpg" class="d-block w-100" alt="Conductora y clienta en viaje">
+            </picture>
+          </div>
+          <div class="carousel-item">
+            <picture>
+              <source media="(max-width: 576px)" srcset="img/img5_m.jpg">
+              <source media="(max-width: 991px)" srcset="img/img5_m.jpg">
+              <img src="img/img5_m.jpg" class="d-block w-100" alt="Conductora de Navina">
+            </picture>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carrusel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carrusel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </article>
+
+    <article id="explora" class="container-fluid">
+      <h2 class="text-center">Conoce la App</h2>
+      <div class="row justify-content-center align-items-center">
+        <div class="col-11 col-md-5">
+          <h3>Inicio</h3>
+          <p>Al abrir la app y definir tu destino, NAVINA comenzará automáticamente la búsqueda de conductoras
+            disponibles en tu área para hacer que el proceso sea rápido y eficiente.</p>
+          <p>Luego de encontrarla, van a poder ver el nombre de la conductora, tipo de auto, su patente, tarifa, el
+            medio de pago utilizado y cual de los servicios eligieron.</p>
+        </div>
+        <picture class="col-8 col-md-5 col-lg-4">
+          <source media="(max-width: 576px)" srcset="img/img6_m.png">
+          <source media="(max-width: 991px)" srcset="img/img6_t.png">
+          <img src="img/img6.png" alt="Seccion de Inicio">
+        </picture>
+      </div>
+
+      <div class="sec">
+        <div class="sec row justify-content-center align-items-center">
+          <picture class="col-8 col-md-5 col-lg-4">
+            <source media="(max-width: 576px)" srcset="img/img7_m.png">
+            <source media="(max-width: 991px)" srcset="img/img7_t.png">
+            <img src="img/img7.png" alt="Sección de Reservar">
+          </picture>
+          <div class="col-11 col-md-5">
+            <h3>Reservar</h3>
+            <p>En esta sección podrán optar por 4 opciones. Entre ellas son:<br>
+              1.ª opción: viaje común.<br>
+              2.ª opción: reservar viaje.<br>
+              3.ª opción: compartir viaje<br>
+              4.ª opción: enviar paquetería.</p>
+            <p>Dentro de la opción 4, van a poder reservar su viaje de una manera muy práctica.Deben ingresar el destino
+              inicial y
+              el destino final, y elegir el día y
+              horario.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-center align-items-center">
+        <div class="col-11 col-md-5">
+          <h3>INA</h3>
+          <p>En la sección INA encontrarás a nuestra asistente virtual, diseñada para brindarte compañía y seguridad en
+            cada viaje. </p>
+          <p>Aquí puedes interactuar con INA a través de una casilla de texto, donde podrás escribir cualquier consulta
+            o solicitud. Además, se incluyen dos botones preseleccionados pensados para situaciones en las que no te
+            sientas segura, brindándote opciones rápidas para pedir ayuda o simular una llamada de emergencia.</p>
+        </div>
+        <picture class="col-8 col-md-5 col-lg-4">
+          <source media="(max-width: 576px)" srcset="img/img8_m.png">
+          <source media="(max-width: 991px)" srcset="img/img8_t.png">
+          <img src="img/img8.png" alt="Sección de INA">
+        </picture>
+      </div>
+      </div>
+      </div>
+    </article>
+
+    <article id="descarga">
+      <div class="px-4 py-5 text-center">
+        <div class="py-5">
+          <h2>Descarga la App</h2>
+          <div class="col-8 col-sm-11 col-lg-6 mx-auto">
+            <p class="fs-5 mb-4">Tu viaje comienza con solo un clic. Con la app NAVINA, puedes disfrutar de un servicio
+              de transporte seguro, cómodo y adaptado a tus necesidades. Además, nuestra asistente virtual INA te
+              acompañará en todo momento, brindándote la seguridad y confianza que necesitas.</p>
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+              <button type="button" class="btn btn-lg"><a href="http://play.google.com/store/games?hl=es_AR">
+                  <picture>
+                    <source media="(max-width: 576px)" srcset="img/google_m.png">
+                    <source media="(max-width: 991px)" srcset="img/google_t.png">
+                    <img src="img/google.png" alt="Botón de descarga Google Play">
+                  </picture>
+                </a></button>
+              <button type="button" class="btn btn-lg"><a href="http://www.apple.com/la/app-store/">
+                  <picture>
+                    <source media="(max-width: 576px)" srcset="img/ios_m.png">
+                    <source media="(max-width: 991px)" srcset="img/ios_t.png">
+                    <img src="img/ios.png" alt="Botón de descarga App Store">
+                  </picture></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <footer>
+    <section>
+      <div>
+        <p>Participantes: Román Natasha y Vasquez Valeria.</p>
+        <p>Materia: Maquetado y Desarrollo Web</p>
+        <p>Turno: Mañana</p>
+        <p>Comisión: DMM2BP</p>
+        <p>Año: 2024</p>
+      </div>
+
+      <div class="footers">
+        <a href="https://www.facebook.com/" target="_blank">
+          <picture class="col-11 col-md-6 col-lg-5 imagen-fondo">
+            <source media="(max-width: 576px)" srcset="img/fb_c.png">
+            <source media="(max-width: 991px)" srcset="img/fb_t_1.png">
+            <img src="img/fb.png" alt="logo de facebook">
+          </picture>
+        </a>
+        <a href="https://www.facebook.com/" target="_blank">
+          <picture class="col-11 col-md-6 col-lg-5 imagen-fondo">
+            <source media="(max-width: 576px)" srcset="img/tw_c.png">
+            <source media="(max-width: 991px)" srcset="img/tw_pc.png">
+            <img src="img/tw.png" alt="logo de twitter">
+          </picture>
+        </a>
+        <a href="https://www.facebook.com/" target="_blank">
+          <picture class="col-11 col-md-6 col-lg-5 imagen-fondo">
+            <source media="(max-width: 576px)" srcset="img/inst_c.png">
+            <source media="(max-width: 991px)" srcset="img/inst_t.png">
+            <img src="img/inst.png" alt="logo de instagram">
+          </picture>
+        </a>
+      </div>
+    </section>
+  </footer>
+
+
+
+  <script src="js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
